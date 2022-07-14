@@ -51,7 +51,7 @@ api.post("/getartworkbyid" , UploadP.getArtworkById);
 
 //Database Connection
 mongoose.connect(process.env.HOST).then(() => {
-  api.listen(process.env.PORT, () => {
+  api.listen(process.env.PORT || 8080, () => {
     console.log("port listening ");
   });
 });
