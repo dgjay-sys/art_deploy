@@ -47,7 +47,7 @@ api.post("/uploadartwork", upload.single("image"), UploadP.uploadArtwork)
 api.get("/getartwork", UploadP.getArtwork)
 api.post("/getartworkbyid" , UploadP.getArtworkById);
 
-s
+
 
 //Database Connection
 mongoose.connect(process.env.HOST).then(() => {
